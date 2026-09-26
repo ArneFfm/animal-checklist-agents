@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ArneFfm/animal-checklist",
+  "title": "Animal Checklist",
+  "description": "Search animals in eight languages with habitats, countries, photos and source credits.",
+  "repository": {
+    "url": "https://github.com/ArneFfm/animal-checklist-agents",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://animalchecklist.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ArneFfm/animal-checklist-account",
+  "title": "Animal Checklist Account",
+  "description": "Read your private animal sightings and mark species seen with a revocable account key.",
+  "repository": {
+    "url": "https://github.com/ArneFfm/animal-checklist-agents",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://animalchecklist.com/mcp/account",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer followed by your MCP key from Account settings, for example Bearer acm_...",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
